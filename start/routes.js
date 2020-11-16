@@ -17,7 +17,6 @@
 const Route = use("Route");
 
 Route.group(() => {
-  Route.get("", "CreditController.show");
-  Route.post("add", "CreditController.add");
-  Route.post("remove", "CreditController.remove");
+  Route.get("/", "CreditController.show");
+  Route.post("/", "CreditController.addRemove");
 }).prefix("api/credits");
